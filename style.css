@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #232526; 
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526); 
+}
+
+.logo{
+    position: relative;
+    color: #fff;
+    font-size: 18rem;
+    text-shadow: 0 0 50px #FBF831,
+                0 0 100px #FBF831,
+                0 0 150px #FBF831,
+                0 0 200px #FBF831,
+                0 0 250px #FBF831,
+                0 0 300px #FBF831,
+                0 0 360px #FBF831;
+    animation:animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
